@@ -1,5 +1,5 @@
-#
-Summary:	Tool to read windows address book filesd
+Summary:	Tool to read Windows address book files
+Summary(pl.UTF-8):	Narzędzie do odczytu plików książek adresowych Windows
 Name:		libwab
 Version:	060901
 Release:	1
@@ -13,11 +13,21 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Libwab is a little command line utility that you can use to export
 your addresses from a Windows Address Book (used in Microsoft Outlook
-Express). Simply compile and run it on a .wab file and it should dump
-the file in ldif format (a nice ascii format used in ldap).
+Express). Simply run it on a .wab file and it should dump the file in
+LDIF format (a nice ASCII format used in LDAP).
 
 Used in heuristic mode libwab can often recover deleted contacts and
 contacts from damaged files.
+
+%description -l pl.UTF-8
+libwab to małe narzędzie linii poleceń, które można wykorzystać do
+eksportu adresów z książki adresowej Windows (używanej przez program
+Microsoft Outlook Express).  Wystarczy uruchomić je na pliku .wab, a
+powinno utworzyć plik zrzutu w formacie LDIF (przyjemnym formacie
+ASCII używanym w LDAP).
+
+Użyte w trybie heurystycznym zwykle potrafi odzyskać usunięte kontakty
+oraz kontakty z uszkodzonych plików.
 
 %prep
 %setup -q
