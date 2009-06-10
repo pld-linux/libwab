@@ -1,7 +1,7 @@
 Summary:	Tool to read Windows address book files
 Summary(pl.UTF-8):	Narzędzie do odczytu plików książek adresowych Windows
 Name:		libwab
-Version:	060901
+Version:	061227
 Release:	1
 License:	GPL v2
 Group:		Applications
@@ -30,7 +30,7 @@ Użyte w trybie heurystycznym zwykle potrafi odzyskać usunięte kontakty
 oraz kontakty z uszkodzonych plików.
 
 %prep
-%setup -q
+%setup -q -n %{name}-060901
 
 %build
 %configure
